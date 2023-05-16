@@ -12,7 +12,7 @@ background: rgb(207, 28, 58);
 .ex-2-square {
     width: 100px;
     height: 100px;
-    background: lightcoral;
+    background: rgb(115, 150, 19);
     transition:2s;
 }
 
@@ -31,17 +31,40 @@ background: rgb(207, 28, 58);
 .ex-4-square {
     width: 100px;
     height: 100px;
-    background: red;
+    background: blue;
+    transition: 1s;
+}
+
+.ex-4-square:hover{
+    opacity:0;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
-    background: red;
+    background: rgb(255, 0, 179);
+    transition: 1s;
 }
+
+.ex-5-square:hover {
+    transform: scale(2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+
+.well > img {
+    transition: 1s;
+}
+.well > img:hover {
+    filter: grayscale(0.7);
+}
+
 
 .ex-9-img {
     margin: 50px 100px;

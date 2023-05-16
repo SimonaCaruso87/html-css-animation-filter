@@ -58,13 +58,13 @@ background: rgb(207, 28, 58);
     width: 500px;
 }
 
-.well > img {
-    transition: 1s;
-}
-.well > img:hover {
+.ex-6-img:hover {
     filter: grayscale(0.7);
 }
 
+.ex-7-img:hover{
+    filter: grayscale(.6) sepia(.5);
+}
 
 .ex-9-img {
     margin: 50px 100px;

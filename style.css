@@ -16,17 +16,19 @@ background: rgb(207, 28, 58);
     transition:2s;
 }
 
-.ex-2-square:hover{
+.ex-2-square:active{
     width : 100%;
 }
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
-    transition:1s;
+    transition: 2s;
 }
 .ex-3-square:hover{
+    transform: rotate(360deg);
     border-radius: 50%;
+    background: lightcoral;
 }
 .ex-4-square {
     width: 100px;
@@ -98,9 +100,29 @@ background: rgb(207, 28, 58);
     0% {
         transform: rotate(1turn);
     }
+}
 
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover{
+    animation: spin-12;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes spin-12 {
+    0%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(275deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;

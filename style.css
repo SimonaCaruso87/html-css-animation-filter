@@ -89,6 +89,16 @@ background: rgb(207, 28, 58);
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+
 .ex-11-icon {
     font-size: 60px;
 }
